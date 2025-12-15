@@ -1,16 +1,36 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
-import { storage } from "./storage";
+import { generateMockAnalysis } from "./mockData";
+import { analyzeRepoRequestSchema } from "@shared/schema";
 
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  // put application routes here
-  // prefix all routes with /api
+  app.get("/api/analyze/:repoPath", async (req, res) => {
+    try {
+      const repoPath = decodeURIComponent(req.params.repoPath);
+      
+      const validation = analyzeRepoRequestSchema.safeParse({ repoPath });
+      if (!validation.success) {
+        return res.status(400).json({ 
+          error: "Invalid repository format. Use owner/repo format.",
+          details: validation.error.errors
+        });
+      }
 
-  // use storage to perform CRUD operations on the storage interface
-  // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
+      const [owner, repo] = repoPath.split("/");
+      
+      await new Promise(resolve => setTimeout(resolve, 800));
+      
+      const analysis = generateMockAnalysis(owner, repo);
+      
+      return res.json(analysis);
+    } catch (error) {
+      console.error("Analysis error:", error);
+      return res.status(500).json({ error: "Failed to analyze repository" });
+    }
+  });
 
   return httpServer;
 }

@@ -1,0 +1,399 @@
+🧠 ROLE & MINDSET
+
+You are a Principal Full-Stack Engineer + Senior UI/UX Product Designer building a professional developer intelligence platform.
+
+You think like:
+
+A Principal Software Architect reviewing real-world systems
+
+A Tech Lead assessing long-term maintainability
+
+A Hiring Panel Evaluator judging engineering maturity
+
+This is not a demo, not a tutorial, and not a GitHub clone.
+
+This is a portfolio-grade, recruiter-respectable product.
+
+🎯 PRODUCT VISION (NON-NEGOTIABLE)
+
+Build a Dark-Themed GitHub Repository Intelligence Platform that answers:
+
+“Is this repository healthy, well-engineered, and production-ready — beyond stars and commits?”
+
+Priority Rule
+
+✅ Repository Analyzer = PRIMARY PRODUCT
+
+➖ Profile Analyzer = SECONDARY CONTEXT ONLY
+
+This is repository intelligence, not a social profile viewer.
+
+🧱 TECH STACK (STRICT)
+Frontend
+
+React (Vite)
+
+Tailwind CSS
+
+lucide-react (icons only)
+
+Recharts (data visualization)
+
+Framer Motion (mandatory, subtle + premium)
+
+Data
+
+Mock data only
+
+No GitHub API
+
+Mock data must be realistic and backend-ready
+
+🌑 DESIGN SYSTEM (MODERN & PREMIUM)
+Theme
+
+Dark charcoal / slate base (❌ no pure black)
+
+Soft contrast, eye-friendly
+
+Calm, premium SaaS vibe
+
+Clean surfaces with depth
+
+No clutter, no noise
+
+Color Strategy (Very Important)
+
+Use intentional gradients, not decoration.
+
+🟢 Green → Healthy / Stable
+
+🟡 Amber → Warnings / Needs attention
+
+🔴 Red → Risk / Issues
+
+🟣 Purple → Intelligence / Analysis
+
+🔵 Blue → Popularity / Activity
+
+Gradients should be:
+
+Subtle
+
+Directional
+
+Used for emphasis, not everywhere
+
+Motion & Interaction (Framer Motion)
+
+Page enter transitions (fade + slide)
+
+Card hover lift (y-axis + shadow)
+
+Chart reveal animations
+
+Section staggered loading
+
+Everything feels alive but calm
+
+No flashy animations.
+Think Linear / Vercel / Raycast, not Dribbble hype.
+
+🧭 WEBSITE PAGES
+1️⃣ Home Page — First 5 Seconds Matter
+
+Purpose: Instantly communicate value and credibility.
+
+Hero Section
+
+Headline:
+
+“Understand GitHub repositories beyond stars.”
+
+Subtext:
+
+Architecture. Code quality. Engineering maturity.
+
+Repo input: owner/repo
+
+Primary CTA:
+Analyze Repository →
+
+Feature Preview Cards (Icon-First)
+
+🧱 Architecture Quality
+
+🫀 Code Health
+
+📘 Documentation
+
+🚀 Production Readiness
+
+Cards:
+
+Glassy dark surfaces
+
+Subtle gradient borders
+
+Motion on hover
+
+Clearly clickable
+
+2️⃣ Repository Analyzer Page (CORE PRODUCT)
+
+This page must feel expensive, intelligent, and authoritative.
+
+🔹 Repo Header
+
+Repository name (hero weight)
+
+Owner (secondary)
+
+Visibility badge (🔓 / 🔒)
+
+Short description
+
+Icons always come first.
+
+🔹 Core Repository Stats (Reusable Cards)
+
+Icon → Big Number → Label
+
+⭐ Stars
+
+🍴 Forks
+
+🐞 Open Issues
+
+🔄 Commits
+
+🕒 Last Updated
+
+Cards must:
+
+Feel critical
+
+Animate on load
+
+Elevate on hover
+
+Be reusable components
+
+🔹 Repository Analysis Sections (VERY IMPORTANT)
+
+Each section must feel like a staff-level engineer review, not documentation.
+
+1. Executive Summary
+
+TL;DR paragraph
+
+Verdict badges (color-coded)
+
+2. Engineering Mindset & Intent
+
+Problem clarity
+
+Signal vs noise
+
+Product thinking vs random features
+
+3. Architecture & System Design
+
+Folder structure
+
+Modularity
+
+Separation of concerns
+
+10× / 100× scalability readiness
+
+4. Code Quality & Maintainability
+
+Readability
+
+Reusability
+
+Technical debt risk
+
+5. Git & Engineering Discipline
+
+Commit clarity
+
+Consistency
+
+Team-readiness
+
+6. Documentation & DX
+
+README depth
+
+Onboarding friction
+
+7. Testing & Reliability
+
+Test presence
+
+Error handling
+
+Confidence level
+
+8. Performance, Security & Best Practices
+
+Perf risks
+
+Security risks
+
+Deployment safety
+
+9. Project Maturity Classification
+
+🟡 Prototype
+
+🟢 Production-Ready
+
+🔵 Scalable Foundation
+
+🔴 Experimental
+
+Badge + short explanation.
+
+🔹 Visual Intelligence (Charts)
+
+Charts support insight — they never dominate.
+
+Each chart:
+
+Icon + title
+
+Animated entry
+
+Clean dark styling
+
+Charts:
+
+🧠 Language Usage (Pie)
+
+📈 Commit Activity Timeline
+
+📊 Issues vs Resolutions
+
+🔹 Engineering Insight Cards
+
+Short, high-signal, one-line insights:
+
+🔥 Actively maintained repository
+
+⚠️ Issues accumulate faster than resolution
+
+📘 README lacks usage examples
+
+🚀 Strong foundation for scaling
+
+🔹 Hiring Perspective
+
+Recruiter-style verdict:
+
+Would this impress a hiring panel?
+
+Suitable roles
+
+Expected developer level
+
+What’s holding it back?
+
+🔹 Scoring System
+
+Scores (0–10):
+
+Architecture & Design
+
+Code Quality
+
+Maintainability
+
+Documentation
+
+Professional Practices
+
+Production Readiness
+
+Compute:
+
+Overall Engineering Maturity Score (0–100)
+
+🔹 Actionable Improvement Roadmap
+
+Split clearly:
+
+✅ Short-term (1–2 weeks)
+
+🚀 Long-term (1–3 months)
+
+3️⃣ Profile Context (SECONDARY)
+
+Minimal and quiet:
+
+Avatar
+
+Username
+
+Followers
+
+GitHub link
+
+Never competes with repo analysis.
+
+🧩 COMPONENT & ARCHITECTURE RULES
+
+Reusable components only
+
+Icons before text
+
+Rounded cards
+
+Soft shadows
+
+Clear hover & focus states
+
+Framer Motion everywhere (subtle)
+
+Required Folder Structure
+src/
+├── pages/
+│   ├── Home.jsx
+│   ├── RepoAnalyzer.jsx
+│
+├── components/
+│   ├── RepoHeader.jsx
+│   ├── StatCard.jsx
+│   ├── HealthCard.jsx
+│   ├── InsightCard.jsx
+│   ├── ScoreCard.jsx
+│   ├── Charts/
+│
+├── data/
+│   ├── mockRepo.js
+│   ├── mockOwner.js
+│   ├── mockAnalysis.js
+│
+├── App.jsx
+└── main.jsx
+
+🏁 QUALITY BAR (FINAL)
+
+This must feel like:
+
+A real SaaS developer intelligence tool
+
+Something recruiters and senior engineers respect
+
+A top-tier portfolio project
+
+Calm, dark, modern, insight-driven
+
+Confident, not flashy
+
+⚠️ FINAL RULE
+
+This is a Repository Intelligence Platform.
+Profiles exist only as context, never as the product.
